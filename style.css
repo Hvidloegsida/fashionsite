@@ -1,0 +1,136 @@
+ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: rgb(117, 30, 30);
+  padding: 1%;
+}
+
+.header {
+  color: white;
+  font-size: 120%;
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+}
+
+.produktgrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  text-align: center;
+}
+
+.produktinfo {
+  grid-column: 2;
+  background-color: grey;
+  margin-left: 10%;
+  margin-right: 10%;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  border-radius: 0%;
+}
+.produktimg {
+  grid-column: 1;
+}
+
+h2 {
+  font-size: 200%;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h3 {
+  margin-left: 10%;
+}
+.produktoverskrift {
+  color: white;
+}
+
+.kategorigrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+.kate {
+  background-color: gray;
+  text-align: center;
+  padding: 4%;
+  margin: 4%;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 2rem;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+p {
+  text-align: center;
+  color: rgb(117, 30, 30);
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bolder;
+}
+.oldprice {
+  color: rgba(117, 30, 30, 0.466);
+  text-decoration: line-through;
+}
+
+.pro1 .oldprice {
+  display: none;
+}
+
+.pro1 .rabat {
+  display: none;
+}
+.pro1 .soldout {
+  display: none;
+}
+
+.pro2 .soldout {
+  display: none;
+}
+
+.rabat {
+  background-color: yellow;
+  font-weight: bolder;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 150%;
+  text-align: center;
+}
+
+.soldout {
+  background-color: rgb(0, 0, 0);
+  color: white;
+  font-weight: bolder;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 150%;
+  position: absolute;
+  margin-top: -25%;
+  margin-left: 6%;
+  padding-inline: 8%;
+}
+
+.pro1 {
+  display: flex;
+  flex-direction: column;
+}
+
+.pro2 {
+  display: flex;
+  flex-direction: column;
+}
+
+.pro3 {
+  display: flex;
+  flex-direction: column;
+}
+
+.more {
+  align-self: flex-end;
+}
