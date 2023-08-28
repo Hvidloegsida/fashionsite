@@ -76,24 +76,14 @@ p {
   font-family: Arial, Helvetica, sans-serif;
   font-weight: bolder;
 }
+
 .oldprice {
+  display: none;
+}
+article.oldpriceee .oldprice {
   color: rgba(117, 30, 30, 0.466);
   text-decoration: line-through;
-}
-
-.pro1 .oldprice {
-  display: none;
-}
-
-.pro1 .rabat {
-  display: none;
-}
-.pro1 .soldout {
-  display: none;
-}
-
-.pro2 .soldout {
-  display: none;
+  display: block;
 }
 
 article.rabat::after {
@@ -136,4 +126,6 @@ article.soldOut::before {
 
 article {
   position: relative;
+  background-color: antiquewhite;
+  padding: 5%;
 }
