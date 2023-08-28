@@ -20,6 +20,10 @@ function showproduct(product) {
     //productet er udsolgt
     copy.querySelector("article").classList.add("soldOut");
   }
+
+  if (product.discount) {
+    copy.querySelector("article").classList.add("rabat");
+  }
   //appende hvor den skal være i DOM
   document.querySelector("main").appendChild(copy);
 }
