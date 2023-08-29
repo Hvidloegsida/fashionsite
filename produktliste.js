@@ -27,6 +27,7 @@ function showproduct(product) {
     /*GAMMELDAGS MATEMATIK */
     copy.querySelector(".tilbudspris").textContent = Math.round(product.price - (product.discount * product.price) / 100);
   }
+  copy.querySelector(".read-more").setAttribute("href", `produkt.html?id=${product.id}`);
   copy.querySelector(".kollektion").textContent = product.articletype;
   copy.querySelector(".pris").textContent = product.price;
   copy.querySelector("img").src = `https://kea-alt-del.dk/t7/images/webp/640/${product.id}.webp`;

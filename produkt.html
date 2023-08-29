@@ -24,17 +24,28 @@
         </ul>
     </header>
 
-    <div class="produktgrid">
+    <main class="produktgrid">
         <img class="produktimg" src="pics/bukser.webp" alt="produkt">
         <aside class="produktinfo">
             <h2 class="produktoverskrift">Grimme bukser</h2>
-            <h3>Pris:</h3>
-            <h3>Størrelse:</h3>
-            <h3>id nummer:</h3>
+            <h3 class="brand"></h3>
+            <h3>Pris: <span class="pris"></span></h3>
+            <label>
+                Vælg størelse:
+                <select name="størelse">
+                    <option value="S">S</option>
+                    <option value="M">M</option>
+                    <option value="L">L</option>
+                    <option value="XL">XL</option>
+                </select>
+            </label>
+            <button>Føj til kurv</button>
+            <h4>Id nummer: <span class="nummer"></span></h3>
 
         </aside>
-    </div>
-    <script src="javas.js"></script>
+    </main>
+    <script src="produktside.js"></script>
+
 </body>
 
 </html>
