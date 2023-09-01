@@ -1,4 +1,15 @@
-fetch("https://kea-alt-del.dk/t7/api/products?limit=50&start=10")
+const urlParams = new URLSearchParams(window.location.search);
+const season = urlParams.get("season");
+
+/*Vi bruger let fordi at vi ændre vÆrdien af constaten, og den kan man  ikke med const*/
+let endpoint;
+if (season) {
+  /*VÆRDIEN ER EFTER '='*/
+  endpoint = `https://kea-alt-del.dk/t7/api/products?season=${season}`;
+} else {
+  endpoint = `https://kea-alt-del.dk/t7/api/products`;
+}
+fetch(endpoint)
   .then((res) => res.json())
   .then(showproducts);
 
